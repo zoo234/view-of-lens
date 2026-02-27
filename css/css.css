@@ -1,0 +1,677 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(../img/fon.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.text-gl{
+  color: #fff;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.img-gl{
+  width: 1000px;
+  border-radius: 25px;
+}
+.center{
+  text-align: center;
+  justify-content: center;
+}
+.lenta{
+  position: relative; /* Заменим absolute на relative */
+  padding: 0;
+  margin: 0;
+  background-color: #3d3d3d;
+  height: 120px;
+}
+.body-html{
+  margin: 0;
+  padding: 0;
+  height: 1000%;
+  background: #363636;
+}
+.div-shadow{
+  font-size: 20px;
+  background: #545454;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 12px 12px 2px 1px #000;
+  margin: 30px;
+  padding: 10px;
+}
+.beck{
+  font-size: 20px;
+  background: #545454;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 12px 12px 2px 1px #000;
+  margin: 50px;
+  padding: 20px;
+  text-decoration: none;
+  height: 25px;
+}
+.div-shadow a{
+  text-decoration: none;
+  color: #fff;
+}
+.div-shadow:hover{
+  background: #3b3b3b;
+}
+.beck:hover{
+  background: #3b3b3b;
+}
+.div-shadow big{
+  color: yellow;
+}
+.img-tovar{
+  margin: 50px;
+}
+.stak{
+  justify-content: flex-end; /* Заменим justify-content: right на flex-end */
+  margin-top: 79px;
+  display: flex;
+  right: 0;
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+}
+.stak-3{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.stak-3 img{
+  width: 400px;
+  height: 320px;
+  object-fit: cover;
+}
+.img-logo{
+  margin: 10px;
+  margin-right: 0;
+  display: inline-block;
+}
+.text{
+  font-size: 25px;
+  padding: 0;
+  margin: 10px;
+  margin-left: 0;
+  height: 100px;
+  font-family: inherit;
+  color: #fff;
+  display: inline-block;
+  top: 0;
+  position: absolute;
+}
+.button-G{
+  margin: -2px;
+  font-family: inherit;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+}
+.button-G:hover{
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+}
+.button-M{
+  margin: -2px;
+  font-family: inherit;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+}
+.button-M:hover{
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+}
+.button-V{
+  margin: -2px;
+  font-family: inherit;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+}
+.button-V:hover{
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+}
+.button-P{
+  margin: 0px;
+  font-family: inherit;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+}
+.button-P:hover{
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+}
+#G[type=radio]:checked ~ .lenta .stak .button-G{
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+}
+#G[type=radio]:checked ~ .stak-2 .G-frame{
+  transition: 0.5s;
+  opacity: 1;
+  width: 1100px;
+  height: 800px;
+}
+#M[type=radio]:checked ~ .lenta .stak .button-M {
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+}
+#M[type=radio]:checked ~ .stak-2 .M-frame{
+  transition: 0.5s;
+  opacity: 1;
+  width: 1100px;
+  height: 800px;
+}
+#V[type=radio]:checked ~ .lenta .stak .button-V{
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+}
+#V[type=radio]:checked ~ .stak-2 .V-frame{
+  transition: 0.5s;
+  opacity: 1;
+  width: 1100px;
+  height: 800px;
+}
+#P[type=radio]:checked ~ .lenta .stak .button-P {
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+}
+#P[type=radio]:checked ~ .stak-2 .P-frame{
+  transition: 0.5s;
+  opacity: 1;
+  width: 1100px;
+  height: 800px;
+}
+input{
+  display: none;
+}
+.G-frame{
+  opacity: 0;
+  transition: 1s;
+  width: 0px;
+  height: 800px;
+}
+.M-frame{
+  opacity: 0;
+  transition: 1s;
+  width: 0px;
+  height: 800px;
+}
+.P-frame{
+  opacity: 0;
+  transition: 1s;
+  width: 0px;
+  height: 800px;
+}
+.V-frame{
+  opacity: 0;
+  transition: 1s;
+  width: 0px;
+  height: 800px;
+}
+.stak-2{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.button-img{
+  transition: 0.5s;
+  opacity: 0.5;
+  padding: 0;
+  margin: 20px;
+}
+.button-img:hover{
+  transition: 0.5s;
+  opacity: 1;
+}
+.text-bottom{
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px;
+}
+.circle{
+  width: 50px;
+}
+.lenta-2{
+  height: 90px;
+  position: relative;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #3d3d3d;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+html {
+  height: 100%;
+}
+@media only screen and (max-width: 520px){
+  .text{
+    font-size: 20px;
+    padding: 0;
+    margin: 10px;
+    margin-left: 0;
+    height: 100px;
+    font-family: inherit;
+    color: #fff;
+    display: inline-block;
+    top: 0;
+    position: absolute;
+  }
+  .button-img{
+    transition: 0.5s;
+    opacity: 0.5;
+    padding: 0;
+    margin: 5px;
+  }
+  .lenta-2{
+    height: 70px;
+    position: relative;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #3d3d3d;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .text-bottom{
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2px;
+  }
+  .div-shadow pre{
+    font-size: 8px;
+  }
+  .lenta{
+    padding: 0;
+    margin: 0;
+    background-color: #3d3d3d;
+    position: inherit;
+    height: auto;
+  }
+  .stak{
+    display: flex;
+    justify-content: right;
+    margin-top: 0px;
+    position: inherit;
+  }
+  .G-frame{
+    opacity: 0;
+    transition: 1s;
+    width: 0px;
+    height: 600px;
+  }
+  .M-frame{
+    opacity: 0;
+    transition: 1s;
+    width: 0px;
+    height: 600px;
+  }
+  .P-frame{
+    opacity: 0;
+    transition: 1s;
+    width: 0px;
+    height: 600px;
+  }
+  .V-frame{
+    opacity: 0;
+    transition: 1s;
+    width: 0px;
+    height: 600px;
+  }
+  #G[type=radio]:checked ~ .lenta .stak .button-G{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  #G[type=radio]:checked ~ .stak-2 .G-frame{
+    transition: 0.5s;
+    opacity: 1;
+    width: 365px;
+    height: 600px;
+  }
+  #M[type=radio]:checked ~ .lenta .stak .button-M {
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  #M[type=radio]:checked ~ .stak-2 .M-frame{
+    transition: 0.5s;
+    opacity: 1;
+    width: 365px;
+    height: 600px;
+  }
+  #V[type=radio]:checked ~ .lenta .stak .button-V{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  #V[type=radio]:checked ~ .stak-2 .V-frame{
+    transition: 0.5s;
+    opacity: 1;
+    width: 365px;
+    height: 600px;
+  }
+  #P[type=radio]:checked ~ .lenta .stak .button-P {
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  #P[type=radio]:checked ~ .stak-2 .P-frame{
+    transition: 0.5s;
+    opacity: 1;
+    width: 365px;
+    height: 600px;
+  }
+  .text-gl{
+    color: #fff;
+    margin-left: 4px;
+    font-size: 7.5px;
+  }
+  .img-gl{
+    width: 290px;
+    border-radius: 10px;
+  }
+  .stak-3 img{
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .button-G{
+    margin: -2px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px;
+  }
+  .button-G:hover{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  .button-M{
+    margin: -2px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px;
+  }
+  .button-M:hover{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  .button-V{
+    margin: -2px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px;
+  }
+  .button-V:hover{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  .button-P{
+    margin: -2px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px;
+  }
+  .button-P:hover{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  .div-shadow{
+    font-size: 13px;
+    background: #545454;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px #000;
+    margin: 5px;
+    padding: 5px;
+    width: 260px;
+  }
+  #html-mobile{
+    display: grid;
+    justify-content: center;
+  }
+  #html-mobile2{
+    display: grid;
+    justify-content: center;
+  }
+  .beck{
+    font-size: 14px;
+    background: #545454;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px #000;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    height: 15px;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 520px){
+  .div-shadow pre{
+    font-size: 13px;
+  }
+  .lenta{
+    padding: 0;
+    margin: 0;
+    background-color: #3d3d3d;
+    position: inherit;
+    height: auto;
+  }
+  .stak{
+    display: flex;
+    justify-content: right;
+    margin-top: 0px;
+    position: inherit;
+  }
+  .G-frame{
+    opacity: 0;
+    transition: 1s;
+    width: 0px;
+    height: 1100px;
+  }
+  .M-frame{
+    opacity: 0;
+    transition: 1s;
+    width: 0px;
+    height: 1100px;
+  }
+  .P-frame{
+    opacity: 0;
+    transition: 1s;
+    width: 0px;
+    height: 1100px;
+  }
+  .V-frame{
+    opacity: 0;
+    transition: 1s;
+    width: 0px;
+    height: 1100px;
+  }
+  #G[type=radio]:checked ~ .lenta .stak .button-G{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  #G[type=radio]:checked ~ .stak-2 .G-frame{
+    transition: 0.5s;
+    opacity: 1;
+    width: 550px;
+    height: 1100px;
+  }
+  #M[type=radio]:checked ~ .lenta .stak .button-M {
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  #M[type=radio]:checked ~ .stak-2 .M-frame{
+    transition: 0.5s;
+    opacity: 1;
+    width: 550px;
+    height: 1100px;
+  }
+  #V[type=radio]:checked ~ .lenta .stak .button-V{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  #V[type=radio]:checked ~ .stak-2 .V-frame{
+    transition: 0.5s;
+    opacity: 1;
+    width: 550px;
+    height: 1100px;
+  }
+  #P[type=radio]:checked ~ .lenta .stak .button-P {
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  #P[type=radio]:checked ~ .stak-2 .P-frame{
+    transition: 0.5s;
+    opacity: 1;
+    width: 550px;
+    height: 1100px;
+  }
+  .text-gl{
+    color: #fff;
+    margin-left: 4px;
+    font-size: 11px;
+  }
+  .img-gl{
+    width: 470px;
+    border-radius: 15px;
+  }
+  .stak-3 img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .button-G{
+    margin: -2px;
+    font-family: inherit;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .button-G:hover{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  .button-M{
+    margin: -2px;
+    font-family: inherit;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .button-M:hover{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  .button-V{
+    margin: -2px;
+    font-family: inherit;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .button-V:hover{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  .button-P{
+    margin: -2px;
+    font-family: inherit;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .button-P:hover{
+    transition: 0.5s;
+    color: #000;
+    background-color: #fff;
+  }
+  .div-shadow{
+    font-size: 18px;
+    background: #545454;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px #000;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+  }
+  #html-mobile{
+    display: grid;
+    justify-content: center;
+  }
+  #html-mobile2{
+    display: grid;
+    justify-content: center;
+  }
+  .beck{
+    font-size: 20px;
+    background: #545454;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px #000;
+    margin: 10px;
+    padding: 20px;
+    text-decoration: none;
+    height: 25px;
+  }
+}
